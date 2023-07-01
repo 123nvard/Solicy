@@ -10,9 +10,11 @@ import androidx.navigation.fragment.findNavController
 import com.example.solicytaskproject.databinding.FragmentSendEmailBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+//import org.koin.androidx.viewmodel.ext.android.viewModel
+
 class SendEmailFragment : Fragment() {
     private lateinit var binding: FragmentSendEmailBinding
-    private val viewModel by viewModel<SendEmailViewModel>()
+//    private val viewModel by viewModel<SendEmailViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,17 +30,17 @@ class SendEmailFragment : Fragment() {
                 findNavController().navigateUp()
             }
             imSend.setOnClickListener {
-                viewModel.sendEmail(
-                    tvFromText.text.toString(),
-                    tvToText.text.toString(),
-                    tvThemeText.text.toString(),
-                    etMessageText.text.toString()
-                )
+//                viewModel.sendEmail(
+//                    tvFromText.text.toString(),
+//                    tvToText.text.toString(),
+//                    tvThemeText.text.toString(),
+//                    etMessageText.text.toString()
+//                )
             }
-            viewModel.successLiveData.observe(viewLifecycleOwner) {
-                Toast.makeText(requireContext(), "Message was sent", Toast.LENGTH_LONG).show()
-                findNavController().navigateUp()
-            }
+//            viewModel.successLiveData.observe(viewLifecycleOwner) {
+//                Toast.makeText(requireContext(), "Message was sent", Toast.LENGTH_LONG).show()
+//                findNavController().navigateUp()
+//            }
         }
     }
 }

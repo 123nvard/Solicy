@@ -6,6 +6,10 @@ import androidx.lifecycle.viewModelScope
 import com.example.solicytaskproject.domain.interactors.SendEmailUseCase
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import com.example.solicytaskproject.domain.interactors.LoginUseCase
+import com.example.solicytaskproject.models.User
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 class SendEmailViewModel(private val sendEmailUseCase: SendEmailUseCase) : ViewModel() {
 
