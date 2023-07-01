@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SolicyTaskProject</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="all_inboxes">All Inboxes</string>
+    <string name="solicy_company">Solicy Company</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_email">Forget password?</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_in">Sign in</string>
+    <string name="inbox">Inbox</string>
+    <string name="to_me">to me</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="reply">Reply</string>
+    <string name="forward">Forward</string>
+    <string name="write">Write</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="compose">Compose</string>
+    <string name="solicycompany_gmail_com">solicyCompany@gmail.com</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.sendEmail.SendEmailFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back"
+        android:padding="@dimen/space_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_menu"
+        android:padding="@dimen/space_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_send"
+        android:padding="@dimen/space_10"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@id/im_menu"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_attach"
+        android:padding="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@id/im_send"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:text="@string/write"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        app:layout_constraintStart_toEndOf="@+id/im_back"
+        app:layout_constraintTop_toTopOf="@+id/im_back"
+        app:layout_constraintBottom_toBottomOf="@+id/im_back"
+        app:srcCompat="@drawable/ic_attach" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:text="@string/from"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        android:layout_marginTop="@dimen/space_20"
+        app:layout_constraintStart_toStartOf="@id/im_back"
+        app:layout_constraintTop_toBottomOf="@id/im_back"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        android:layout_marginStart="@dimen/space_20"
+        app:layout_constraintStart_toEndOf="@id/tv_from"
+        app:layout_constraintTop_toTopOf="@id/tv_from"
+        app:layout_constraintBottom_toBottomOf="@id/tv_from"
+        android:text="@string/solicycompany_gmail_com"/>
+
+    <View
+        android:id="@+id/divider_one"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_from_text"
+        app:layout_constraintBottom_toTopOf="@id/tv_to_text"
+        android:background="#F8F8F8"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:text="@string/to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        android:layout_marginTop="@dimen/space_20"
+        app:layout_constraintStart_toStartOf="@id/tv_from"
+        app:layout_constraintTop_toBottomOf="@id/tv_from"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tv_to_text"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/space_15"
+        android:maxLines="2"
+        android:backgroundTint="@color/white"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@id/tv_to"
+        app:layout_constraintTop_toTopOf="@id/tv_to"
+        app:layout_constraintBottom_toBottomOf="@id/tv_to"/>
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_to_text"
+        app:layout_constraintBottom_toTopOf="@id/tv_theme_text"
+        android:background="#F8F8F8"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tv_theme_text"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="@dimen/size_20"
+        android:hint="@string/subject"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_to"
+        app:layout_constraintTop_toBottomOf="@id/tv_to" />
+
+    <View
+        android:id="@+id/divider_three"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_theme_text"
+        android:background="@color/light_white"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_message_text"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

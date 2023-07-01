@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <View
+        android:id="@+id/searchViewBack"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_44"
+        android:layout_marginTop="@dimen/space_33"
+        android:background="@drawable/search_background"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:iconifiedByDefault="false"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/searchViewBack"
+        app:layout_constraintEnd_toStartOf="@id/user_image"
+        app:layout_constraintStart_toEndOf="@id/menu_button"
+        app:layout_constraintTop_toTopOf="@id/searchViewBack"
+        app:searchHintIcon="@null"
+        app:searchIcon="@null" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/space_28"
+        android:layout_height="@dimen/space_28"
+        android:layout_marginEnd="@dimen/space_12"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="@id/searchViewBack"
+        app:layout_constraintEnd_toEndOf="@id/searchViewBack"
+        app:layout_constraintTop_toTopOf="@id/searchViewBack"
+        app:shapeAppearanceOverlay="@style/shape_circle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_12"
+        app:layout_constraintBottom_toBottomOf="@id/searchViewBack"
+        app:layout_constraintStart_toStartOf="@id/searchViewBack"
+        app:layout_constraintTop_toTopOf="@id/searchViewBack"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_all_inboxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/all_inboxes"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/size_14"
+        app:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_12" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_messages"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:layout_marginTop="@dimen/space_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/tv_all_inboxes"
+        tools:listitem="@layout/item_inbox" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/compose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_20"
+        android:background="@drawable/search_background"
+        android:backgroundTint="@color/light_blue"
+        android:drawableStart="@drawable/ic_compose"
+        android:drawablePadding="@dimen/space_2"
+        android:paddingHorizontal="@dimen/space_15"
+        android:paddingVertical="@dimen/space_10"
+        android:text="@string/compose"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

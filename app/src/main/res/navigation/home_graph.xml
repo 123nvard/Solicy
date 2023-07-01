@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.solicytaskproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_viewInboxFragment"
+            app:destination="@id/viewInboxFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_sendEmailFragment2"
+            app:destination="@id/sendEmailFragment2" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/viewInboxFragment"
+        android:name="com.example.solicytaskproject.ui.ViewInboxFragment"
+        android:label="fragment_view_inbox"
+        tools:layout="@layout/fragment_view_inbox" >
+        <argument
+            android:name="dataOfMessage"
+            app:argType="com.example.solicytaskproject.models.MessageData" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendEmailFragment2"
+        android:name="com.example.solicytaskproject.ui.sendEmail.SendEmailFragment"
+        android:label="SendEmailFragment" />
+
+</navigation>

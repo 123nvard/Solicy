@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ViewInboxFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_44"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dots_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        app:srcCompat="@drawable/ic_three_dots" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/message_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintEnd_toStartOf="@id/dots_button"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        app:srcCompat="@drawable/ic_message" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintEnd_toStartOf="@id/message_button"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reply_another_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_20"
+        android:layout_marginEnd="@dimen/space_25"
+        android:background="@drawable/inbox_button_bakground"
+        android:drawableStart="@drawable/ic_reply"
+        android:drawablePadding="5dp"
+        android:paddingHorizontal="@dimen/space_20"
+        android:paddingVertical="@dimen/space_7"
+        android:text="@string/reply"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/leftGuide" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/forward_another_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_20"
+        android:layout_marginEnd="@dimen/space_25"
+        android:background="@drawable/inbox_button_bakground"
+        android:drawableStart="@drawable/ic_forward"
+        android:drawablePadding="5dp"
+        android:paddingHorizontal="@dimen/space_20"
+        android:paddingVertical="@dimen/space_7"
+        android:text="@string/forward"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintEnd_toStartOf="@id/delete_button"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        app:srcCompat="@drawable/ic_download" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/three_dots_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+        app:srcCompat="@drawable/ic_three_dots" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/forward_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintEnd_toStartOf="@id/three_dots_button"
+        app:layout_constraintTop_toTopOf="@id/three_dots_button"
+        app:srcCompat="@drawable/ic_reply" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favorite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_subject"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintTop_toTopOf="@id/tv_message_subject"
+        app:srcCompat="@drawable/ic_star" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_message_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_25"
+        android:maxWidth="@dimen/space_305"
+        android:text="@string/solicy_company"
+        android:textSize="@dimen/size_21"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+
+        />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_message_"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_0"
+            android:layout_marginTop="@dimen/space_25"
+            android:text="@string/lorem_ipsum"
+            android:textSize="@dimen/size_14"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@id/reply_another_button"
+            app:layout_constraintEnd_toStartOf="@id/rightGuide"
+            app:layout_constraintStart_toEndOf="@id/leftGuide"
+            app:layout_constraintTop_toBottomOf="@id/tv_destination"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_25"
+        android:background="@drawable/search_background"
+        android:maxWidth="@dimen/space_305"
+        android:paddingHorizontal="@dimen/space_5"
+        android:text="@string/inbox"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_message_subject"
+        app:layout_constraintEnd_toStartOf="@id/favorite_button"
+        app:layout_constraintStart_toEndOf="@id/tv_message_subject"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:maxWidth="@dimen/space_160"
+        android:maxLines="1"
+        android:text="@string/solicy_company"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/user_image"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10"
+        android:maxWidth="@dimen/space_160"
+        android:text="@string/solicy_company"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sender_name"
+        app:layout_constraintStart_toEndOf="@id/tv_sender_name"
+        app:layout_constraintTop_toTopOf="@id/tv_sender_name"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:drawablePadding="@dimen/space_5"
+        android:maxWidth="@dimen/space_160"
+        android:text="@string/to_me"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_sender_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_sender_name"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/space_37"
+        android:layout_height="@dimen/space_37"
+        android:layout_marginTop="@dimen/space_25"
+        android:layout_marginEnd="@dimen/space_12"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@id/tv_message_subject"
+        app:shapeAppearanceOverlay="@style/shape_circle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

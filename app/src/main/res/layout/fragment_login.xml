@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/ic_google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/size_20"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/im_logo"
+        app:layout_constraintStart_toStartOf="@+id/im_logo"
+        app:layout_constraintTop_toBottomOf="@id/im_logo" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:paddingVertical="@dimen/space_17"
+        android:paddingStart="@dimen/space_20"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_sign_in" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_password"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_26"
+        android:hint="@string/password"
+        android:inputType="text"
+        android:paddingVertical="@dimen/space_17"
+        android:paddingStart="@dimen/space_20"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_forget"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_email"
+        android:layout_marginTop="@dimen/space_10"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forget" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_41" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
