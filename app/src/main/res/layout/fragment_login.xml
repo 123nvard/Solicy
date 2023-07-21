@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_26"
         android:hint="@string/password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:paddingVertical="@dimen/space_17"
         android:paddingStart="@dimen/space_20"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"

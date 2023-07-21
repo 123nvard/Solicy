@@ -11,7 +11,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="all_inboxes">All Inboxes</string>
-    <string name="solicy_company">Solicy Company</string>
+    <string name="john_company">John Company</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="submit">Submit</string>
@@ -29,5 +29,5 @@
     <string name="to">To</string>
     <string name="subject">Subject</string>
     <string name="compose">Compose</string>
-    <string name="solicycompany_gmail_com">solicyCompany@gmail.com</string>
+    <string name="johnsmith">johnsmith@gmail.com</string>
 </resources>

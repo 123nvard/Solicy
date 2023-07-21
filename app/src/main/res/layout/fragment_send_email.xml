@@ -78,7 +78,7 @@
         app:layout_constraintStart_toEndOf="@id/tv_from"
         app:layout_constraintTop_toTopOf="@id/tv_from"
         app:layout_constraintBottom_toBottomOf="@id/tv_from"
-        android:text="@string/solicycompany_gmail_com"/>
+        android:text="@string/johnsmith"/>
 
     <View
         android:id="@+id/divider_one"
